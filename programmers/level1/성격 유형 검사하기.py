@@ -18,6 +18,4 @@ def solution(survey, choices):
 
     return answer
 
-
-
 print(solution(["TR", "RT", "TR"], [7, 1, 3]))
