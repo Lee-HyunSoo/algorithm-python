@@ -2,12 +2,12 @@ from collections import Counter
 
 
 def solution(X, Y):
-    answer = ''
     X, Y = Counter(X), Counter(Y)
 
-    for key, value in Counter(X).items():
+    answer = ''
+    for key, value in X.items():
         if Y[key] != 0:
-            for i in range(min(value, Y[key])):
+            for _ in range(min(value, Y[key])):
                 answer += key
     if answer.count('0') == len(answer) and len(answer) != 0:
         answer = '0'
