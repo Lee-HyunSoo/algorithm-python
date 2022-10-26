@@ -5,5 +5,3 @@ def solution(elements):
         for j in range(len(elements) // 2):
             answer.add(sum(elements[j:j+i+1]))
     return len(answer)
-
-print(solution([7,9,1,1,4]))
