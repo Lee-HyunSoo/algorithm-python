@@ -1,4 +1,5 @@
 import sys
+
 n, m = map(int, sys.stdin.readline().split())
 pocket = dict()
 for i in range(1, n + 1):
