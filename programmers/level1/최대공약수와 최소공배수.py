@@ -6,6 +6,6 @@ def gcd(n, m):
     else:
         return m
 
-def solution(n, m):
-    return [gcd(n, m), int(n * m / gcd(n, m))]
 
+def solution(n, m):
+    return [gcd(n, m), n * m / gcd(n, m)]
