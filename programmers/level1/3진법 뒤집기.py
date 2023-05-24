@@ -1,6 +1,6 @@
 def solution(n):
-    answer = ''
+    num = ''
     while n > 0:
-        n, m = divmod(n, 3)
-        answer += str(m)
-    return int(answer, 3)
+        n, mod = divmod(n, 3)
+        num += str(mod)
+    return int(num, 3)
